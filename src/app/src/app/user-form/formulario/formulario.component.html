@@ -1,0 +1,17 @@
+<div id="fundo">
+  <div class="container">
+    <h2>Formulário</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="formCliente">
+      <div class="form-group">
+        <label for="nome" id="nome">Nome:</label>
+        <input type="text" id="nome" class="form-control" formControlName="nome" placeholder="Digite o seu nome">
+      </div>
+      <div class="form-group">
+        <label for="email" id="email">E-mail:</label>
+        <input type="email" id="email" class="form-control" formControlName="email"
+          placeholder="Digite o seu melhor E-mail">
+      </div>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</div>
